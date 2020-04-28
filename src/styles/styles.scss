@@ -1,0 +1,9 @@
+@import '_setup.scss';
+@import '_mixins.scss';
+@import '_header.scss';
+@import '_body.scss';
+
+html {
+    height: 100vh;
+    background-color: #fdfd96;
+}
