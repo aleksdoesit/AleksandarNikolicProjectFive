@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/aleksdoesit/AleksandarNikolicProjectFive/static/css/main.e3aaefd6.chunk.css",
+    "main.js": "/aleksdoesit/AleksandarNikolicProjectFive/static/js/main.94087d89.chunk.js",
+    "main.js.map": "/aleksdoesit/AleksandarNikolicProjectFive/static/js/main.94087d89.chunk.js.map",
+    "runtime-main.js": "/aleksdoesit/AleksandarNikolicProjectFive/static/js/runtime-main.0e34de61.js",
+    "runtime-main.js.map": "/aleksdoesit/AleksandarNikolicProjectFive/static/js/runtime-main.0e34de61.js.map",
+    "static/js/2.859b57d1.chunk.js": "/aleksdoesit/AleksandarNikolicProjectFive/static/js/2.859b57d1.chunk.js",
+    "static/js/2.859b57d1.chunk.js.map": "/aleksdoesit/AleksandarNikolicProjectFive/static/js/2.859b57d1.chunk.js.map",
+    "index.html": "/aleksdoesit/AleksandarNikolicProjectFive/index.html",
+    "precache-manifest.f28a0cdbd8b1cfe25dd24e2c5c307ffe.js": "/aleksdoesit/AleksandarNikolicProjectFive/precache-manifest.f28a0cdbd8b1cfe25dd24e2c5c307ffe.js",
+    "service-worker.js": "/aleksdoesit/AleksandarNikolicProjectFive/service-worker.js",
+    "static/css/main.e3aaefd6.chunk.css.map": "/aleksdoesit/AleksandarNikolicProjectFive/static/css/main.e3aaefd6.chunk.css.map",
+    "static/js/2.859b57d1.chunk.js.LICENSE.txt": "/aleksdoesit/AleksandarNikolicProjectFive/static/js/2.859b57d1.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0e34de61.js",
+    "static/js/2.859b57d1.chunk.js",
+    "static/css/main.e3aaefd6.chunk.css",
+    "static/js/main.94087d89.chunk.js"
+  ]
+}
