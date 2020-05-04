@@ -6,6 +6,7 @@ import Notes from './Notes'
 
 class Body extends Component {
 
+    // Construct an empty array to push our firebase data into
     constructor(){
         super()
         this.state = {
@@ -13,6 +14,7 @@ class Body extends Component {
         }
     }
 
+    // Pull our database data and push the values into the notes array
     componentDidMount() {
         const dbRef = firebase.database().ref();
         dbRef.on('value', (result) => {
@@ -27,6 +29,7 @@ class Body extends Component {
             })
         }
 
+    // Pass in our new array as a prop for our Notes component
     render(){
         return (
             <main className="wrapper">

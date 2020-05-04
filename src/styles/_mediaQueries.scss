@@ -1,0 +1,45 @@
+// High Monitor Resolution
+@media screen and (min-width: 1600px) {
+
+    main {
+
+        ul {
+
+            li {
+                width: 20%;
+            }
+        }
+    }
+}
+
+// Tablet Resolution
+@media screen and (max-width: 768px) {
+    
+    main {
+
+        height: 100vh;
+        
+        ul {
+            
+            li {
+                width: 45%;
+            }
+        }
+    }
+}
+
+// Mobile Resolution
+@media screen and (max-width: 500px) {
+    
+    main {
+
+        height: 100%;
+
+        ul {
+
+            li {
+                width: 90%;
+            }
+        }
+    }
+}

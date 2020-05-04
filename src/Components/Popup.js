@@ -1,6 +1,8 @@
 import React from 'react';
 import firebase from './firebase';
 
+// Where most of the magic happens
+// Creating an array that stores three values the user inputs: Title, Body, Author
 class Popup extends React.Component {  
     constructor(props) {
         super(props)
@@ -31,6 +33,7 @@ class Popup extends React.Component {
         })
     }
 
+    // On submit change the value using state of the different data fields in the array
     handleSubmit(event) {
         event.preventDefault();
         const dbRef = firebase.database().ref()
@@ -42,6 +45,7 @@ class Popup extends React.Component {
         dbRef.push(completeNote)
     }
 
+    // Form displayed to the DOM after our create note button is pushed
     render() {  
         return (  
             <div className='popup'>  

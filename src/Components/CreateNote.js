@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import Popup from './Popup';
 
-// Bind button on click to create a popup div with form elements and a save button
-// Wire save button to close popup and update firebase
-
+// Creating our create note button and popup box
+// setting state of showPopup to false and toggling it onClick
 class CreateNote extends Component {
     constructor(props) {
         super(props);

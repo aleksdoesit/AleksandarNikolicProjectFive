@@ -2,8 +2,9 @@
 @import '_mixins.scss';
 @import '_header.scss';
 @import '_body.scss';
+@import '_footer.scss';
+@import '_mediaQueries';
 
 html {
     background-color: #e3e3e3;
-    height: 100vh;
 }

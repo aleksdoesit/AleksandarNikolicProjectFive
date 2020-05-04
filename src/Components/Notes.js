@@ -1,6 +1,6 @@
 import React from 'react'
-import firebase from './firebase'
 
+// Taking our firebase data and appending it to the page in individual notes
 function Notes(props) {
     
     return(
