@@ -4,8 +4,9 @@ class Header extends Component {
     render(){
         return (
             <header>
-                <div class="headerWrapper">
-                <h1>Whats on your mind?</h1>
+                <div className="headerWrapper">
+                <h1>Take Note</h1>
+                <h2>Whats on your mind?</h2>
                 </div>
             </header>
         )

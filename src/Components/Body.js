@@ -29,7 +29,7 @@ class Body extends Component {
 
     render(){
         return (
-            <main class="wrapper">
+            <main className="wrapper">
                 <CreateNote />
                 <Notes notesArray={this.state.notes}/>
             </main>

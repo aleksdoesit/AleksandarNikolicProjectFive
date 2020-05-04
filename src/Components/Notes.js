@@ -1,14 +1,19 @@
 import React from 'react'
+import firebase from './firebase'
 
 function Notes(props) {
-    console.log(props);
+    
     return(
         <ul>
             {props.notesArray.map((notes) => {
                 return (
-                    <li><p>{notes.noteBody.userNote}</p><p>{notes.noteBody.userAuthor}</p></li>
+                <li>
+                    <h3>{notes.noteBody.userTitle}</h3>
+                    <p>{notes.noteBody.userNote}</p>
+                    <p className="noteAuthor">By: {notes.noteBody.userAuthor}</p>
+                </li>
                 )
-            })  }
+            })}
         </ul>
     )
 }

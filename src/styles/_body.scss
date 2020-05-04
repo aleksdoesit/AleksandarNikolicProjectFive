@@ -1,14 +1,98 @@
 .wrapper {
     max-width: 85%;
     margin: 0 auto;
-
 }
 
 main {
     height: 100vh;
     border-left: 10px double #caa360;
 
-    h2 {
-        margin: 0;
+    div {
+        display: flex;
+        flex-direction: column;
+
+
+        .newNote {
+            font-family: $noteTitleFont;
+            color: #36383b;
+            font-weight: 600;
+            margin: auto;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            border: 1px solid #36383b
+        }
+
+        .newNote:hover {
+            background-color: #36383b;
+            color: #e3e3e3;
+        }
+
+        .popup {
+            display: flex;
+            margin: 0 auto;
+
+            .popupInner {
+                background-color: #7afcff;
+                padding: 20px;
+
+                form {
+                    display: flex;
+                    flex-direction: column;
+
+                    textarea,
+                    input {
+                        margin: 10px;
+                    }
+
+                    button {
+                        font-family: $noteTitleFont;
+                        font-weight: 600;
+                        color: #36383b;
+                        width: 70%;
+                        margin: 0 auto 1px;
+                        padding: 5px 10px;
+                        border: 1px solid #36383b
+                    }
+
+                    button:hover {
+                        background-color: #36383b;
+                        color: #e3e3e3;
+                    }
+                }
+            }
+        }
+    }
+
+    ul {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        padding: 0;
+
+        li {
+            background-color: #feff9c;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            width: 30%;
+            height: 250px;
+            margin: 30px auto;
+            padding: 0 30px;
+
+
+            h3,
+            .noteAuthor {
+                font-family: $noteTitleFont;
+            }
+
+            p {
+                flex-grow: 2;
+                overflow: scroll;
+                font-family: $noteFont;
+            }
+        }
     }
 }

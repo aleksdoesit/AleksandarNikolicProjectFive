@@ -6,6 +6,7 @@ class Popup extends React.Component {
         super(props)
         this.state = {
             notes: [],
+            userTitle: '',
             userNote:'',
             userAuthor: ''
         }
@@ -14,7 +15,7 @@ class Popup extends React.Component {
 
     handleBody = (event) => {
         this.setState({
-            userNote: event.target.value,
+            userNote: event.target.value
         })
     }
 
@@ -24,10 +25,17 @@ class Popup extends React.Component {
         })
     }
 
+    handleTitle = (event) =>  {
+        this.setState({
+            userTitle: event.target.value
+        })
+    }
+
     handleSubmit(event) {
         event.preventDefault();
         const dbRef = firebase.database().ref()
         const completeNote = {
+            userTitle: this.state.userTitle,
             userNote: this.state.userNote,
             userAuthor: this.state.userAuthor
         }
@@ -37,9 +45,10 @@ class Popup extends React.Component {
     render() {  
         return (  
             <div className='popup'>  
-                <div className='popup\_inner'>  
+                <div className='popup\_inner popupInner'>  
                     <form onSubmit={this.handleSubmit}>
-                        <textarea value={this.state.value} onChange={this.handleBody} name="noteBody" required="required" rows="5" cols="10" minLength="3" maxLength="280"></textarea>
+                        <input onChange={this.handleTitle} type="text" name="noteTitle" required="required" placeholder="Please enter a title for your note"/>
+                        <textarea value={this.state.value} onChange={this.handleBody} name="noteBody" required="required" rows="10" cols="30" minLength="3" maxLength="280"></textarea>
                         <input onChange={this.handleAuthor} type="text" name="noteAuthor" required="required" placeholder="Please enter a your name"/>
                     <button value="Submit">Post</button>
                     <button onClick={this.props.closePopup}>Cancel</button>  
